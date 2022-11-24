@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="min-w-full flex justify-between items-center py-8 px-20 bg-gray-300"> 
+    <nav class="min-w-full flex justify-between items-center py-8 lg:px-20 bg-gray-300"> 
         <!-- LG Nav Left-->
        <div class="hidden lg:flex justify-start items-center space-x-4">
             <h3 class="font-bold text-xl rounded-lg px-4 py-2 bg-indigo-400 text-white">G-Hut</h3>
@@ -34,7 +34,25 @@
             <a href="#" class="px-4 py-2 rounded-lg font-bold text-white hover:bg-cyan-300 bg-cyan-500">Login</a>
             <a href="#" class="px-4 py-2 rounded-lg font-bold text-white hover:bg-cyan-300 bg-cyan-500">Sign up</a>
         </div>
+
         <!-- Mobile Nav -->
+        <div class="block lg:hidden">
+            <!-- icon -->
+            <div class="absolute top-[20px] right-[15px] z-30">
+                <button id="menu-btn" class="lg:hidden focus:outline-none hamburger">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            <!-- Nav items -->
+            <div id="menu" class="hidden -mt-8 pt-16 w-screen min-h-screen flex-col text-black bg-yellow-200">
+                <a href="#" class="hover:text-gray-400 border-b pb-4 border-gray-400 mx-12">Features</a>
+                <a href="#" class="hover:text-gray-400 border-b pb-4 border-gray-400 mx-12">Download</a>
+                <a href="#" class="hover:text-gray-400 border-b pb-4 border-gray-400 mx-12">FAQ</a>
+                <a href="#" class="px-6 py-3 border rounded-lg mx-4 hover:text-gray-400">Resources</a>
+            </div>
+        </div>
     </nav>
     <script src="./js/script.js"></script>
 </body>

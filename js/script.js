@@ -1,3 +1,7 @@
+
+// Scroll-Activated Navbar Code
+
+//		 START		//
 const body = document.body;
 let lastScroll = 0;
 
@@ -20,3 +24,21 @@ window.addEventListener("scroll", () => {
 	}
 	lastScroll = currentScroll;
 });
+
+//----------END----------//
+
+
+//-------Mobile Nav------//
+//		START			//
+
+const menuBtn = document.getElementById('menu-btn')
+const menu = document.getElementById('menu')
+const toggleMenu = (e) => {
+    menuBtn.classList.toggle('open')
+    menu.classList.toggle('hidden')
+    menu.classList.toggle('flex')
+
+}
+menuBtn.addEventListener('click', toggleMenu)
+
+//---------END---------//
